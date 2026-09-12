@@ -1,0 +1,32 @@
+{
+    "document_name": "X51005361895.jpg",
+    "document_type": "invoice",
+    "processing_status": "FAILED",
+    "overall_confidence": null,
+    "file_validation": {
+        "file_type": "image/jpeg",
+        "is_supported": true,
+        "is_readable": true,
+        "page_count": 1,
+        "status": "PASS",
+        "reason": null
+    },
+    "extracted_data": {},
+    "tables": {},
+    "validation": {
+        "checks": [],
+        "overall_status": "NOT_APPLICABLE",
+        "issues": []
+    },
+    "processing_metadata": {
+        "ocr_used": true,
+        "ocr_engine": null,
+        "llm_model": null,
+        "processed_at": "2026-09-10T22:32:09.243207Z",
+        "processing_time_ms": 1262
+    },
+    "error": {
+        "code": "LLM_NOT_CONFIGURED",
+        "message": "No LLM API key configured (GEMINI_API_KEY). Set it in the environment to enable extraction."
+    }
+}

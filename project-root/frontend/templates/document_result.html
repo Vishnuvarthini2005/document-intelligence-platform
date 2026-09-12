@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>{{ document_name }} — Result</title>
+<link rel="stylesheet" href="/static/css/style.css">
+</head>
+<body>
+<header>
+  <h1>📄 Document Result</h1>
+  <a href="/">← Back to dashboard</a>
+</header>
+<div class="container">
+  <div id="result-content">Loading...</div>
+</div>
+<script src="/static/js/app.js"></script>
+<script>
+  loadDocumentResult({{ document_name | tojson }});
+</script>
+</body>
+</html>

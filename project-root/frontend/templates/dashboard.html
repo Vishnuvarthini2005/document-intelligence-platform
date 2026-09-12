@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Document Intelligence Platform</title>
+<link rel="stylesheet" href="/static/css/style.css">
+</head>
+<body>
+<header>
+  <h1>📄 Document Intelligence Platform</h1>
+  <a href="/docs" target="_blank">API docs (Swagger) ↗</a>
+</header>
+<div class="container">
+
+  <section class="panel">
+    <h2>Upload &amp; Process</h2>
+    <form id="upload-form" class="upload-row">
+      <select id="document_type" required>
+        <option value="" disabled selected>Select document type</option>
+        <option value="invoice">Invoice</option>
+        <option value="balance_sheet">Balance Sheet</option>
+        <option value="profit_and_loss">Profit &amp; Loss</option>
+        <option value="cash_flow_statement">Cash Flow Statement</option>
+      </select>
+      <input type="file" id="file" accept=".pdf,.jpg,.jpeg,.png" required>
+      <button type="submit" id="submit-btn">Process Document</button>
+    </form>
+    <div id="status-msg" class="status-msg muted"></div>
+  </section>
+
+  <section class="panel">
+    <h2>Processed Documents</h2>
+    <table id="doc-table">
+      <thead>
+        <tr><th>Document</th><th>Type</th><th>Status</th><th>Confidence</th><th>Processed At</th></tr>
+      </thead>
+      <tbody id="doc-table-body">
+        <tr><td colspan="5" class="muted">Loading...</td></tr>
+      </tbody>
+    </table>
+  </section>
+
+</div>
+<script src="/static/js/app.js"></script>
+<script>
+  loadDashboard();
+  document.getElementById('upload-form').addEventListener('submit', handleUpload);
+</script>
+</body>
+</html>

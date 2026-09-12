@@ -1,0 +1,32 @@
+{
+    "document_name": "resume2.docx",
+    "document_type": "invoice",
+    "processing_status": "FAILED",
+    "overall_confidence": null,
+    "file_validation": {
+        "file_type": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+        "is_supported": false,
+        "is_readable": false,
+        "page_count": 0,
+        "status": "FAILED",
+        "reason": "Only PDF / JPG / PNG documents are supported."
+    },
+    "extracted_data": {},
+    "tables": {},
+    "validation": {
+        "checks": [],
+        "overall_status": "NOT_APPLICABLE",
+        "issues": []
+    },
+    "processing_metadata": {
+        "ocr_used": false,
+        "ocr_engine": null,
+        "llm_model": null,
+        "processed_at": "2026-09-10T22:32:15.072917Z",
+        "processing_time_ms": 0
+    },
+    "error": {
+        "code": "FILE_VALIDATION_FAILED",
+        "message": "Only PDF / JPG / PNG documents are supported."
+    }
+}

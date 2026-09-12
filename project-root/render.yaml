@@ -1,0 +1,28 @@
+# Render Blueprint - lets you deploy with one click via "New + > Blueprint"
+# pointed at this repo. You can also skip this and create the Web Service
+# manually in the Render dashboard using the same settings below.
+services:
+  - type: web
+    name: document-intelligence-platform
+    runtime: docker
+    dockerfilePath: ./Dockerfile
+    dockerContext: .
+    plan: free
+    healthCheckPath: /api/v1/health
+    envVars:
+      - key: GEMINI_API_KEY
+        sync: false
+      - key: GEMINI_MODEL
+        value: gemini-2.0-flash
+      - key: DATABASE_URL
+        value: sqlite:///./data/documents.db
+      - key: LOG_LEVEL
+        value: INFO
+      - key: MAX_PAGES
+        value: "3"
+      - key: MAX_FILE_SIZE_MB
+        value: "15"
+      - key: VALIDATION_TOLERANCE_PCT
+        value: "0.01"
+      - key: VALIDATION_TOLERANCE_ABS
+        value: "1.0"

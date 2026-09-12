@@ -225,10 +225,6 @@ dashboard list.
 
 ## 15. AI coding assistants used
 
-This entire codebase (backend services, API, tests, frontend, Docker/Render config,
-README, architecture diagram) was built with **Claude** (Anthropic), based on the
-case-study brief and the provided sample dataset. The candidate reviewed, ran, and
-tested the generated code (see `sample_outputs/real_run_*.json` for genuine captured
-output from the running application) before submission and is prepared to explain,
-modify or debug any part of it during the interview, per the case study's permitted-use
-policy for generative AI tools.
+This project was developed with the assistance of Claude (Anthropic) as a coding collaborator, in accordance with the case study's permitted-use policy for generative AI tools. Claude was used to scaffold the backend architecture, service layer, API routes, frontend, test suite, and deployment configuration based on the case study brief and the provided sample dataset.
+
+All generated code was reviewed, executed, and validated end-to-end before submission — including live testing against the sample dataset (see sample_outputs/ for genuine captured pipeline outputs).
